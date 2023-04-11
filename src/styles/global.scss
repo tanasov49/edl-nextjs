@@ -1,0 +1,24 @@
+@import '../vendor/normalize.scss';
+@import '../fonts/fonts.scss';
+@import '../scss/variables.scss';
+@import '../scss/mixins.scss';
+body {
+    margin: 0;
+}
+.page {
+    max-width: $widthPage;
+    margin: 0 auto;
+    background: #FFFFFF;
+    font-family: 'Roboto';
+    padding: 40px 72px 64px;
+}
+.not-found {
+    margin: 40px 0 0 0;
+    &__title {
+        font-weight: 400;
+        font-size: 84px;
+        line-height: 101px;
+        color: #000000;
+        margin: 0;
+    }
+}
