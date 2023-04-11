@@ -1,0 +1,35 @@
+.aside-contacts {
+    padding: 0 72px;
+    margin: 128px 0 0 0;
+    h2 {
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 75px;
+        color: #000000;
+        margin: 0;
+    }
+    p {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 49px;
+        color: #000000;
+        margin: 24px 0 0 0;
+    }
+    &__button {
+        padding: 16px 28px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        background: #000000;
+        border-radius: 50px;
+        margin: 40px 0 0 0;
+        transition: background 0.7s, color 0.7s;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background: #7298e6;
+            color: #10d267;
+        }
+    }
+}

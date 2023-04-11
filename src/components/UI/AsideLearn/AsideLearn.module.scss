@@ -1,0 +1,57 @@
+.aside-learn {
+    padding: 0 72px;
+}
+.block-ceo {
+    background: #000000;
+    padding: 48px;
+    margin: 128px 0 0 0;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
+    grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
+    gap: 0 64px;
+    img {
+        grid-column: 1;
+        grid-row: 1 / 8;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        color: #FFFFFF;
+        grid-column: 2;
+        margin: 0 0 21px 0; 
+
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 39px;
+        color: #FFFFFF;
+        grid-column: 2;
+        margin: 0 0 67px 0;
+    }
+    &__name {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        grid-column: 2;
+        margin: 0;
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #FFFFFF;
+        grid-column: 2;
+        transition: color 0.7s;
+        &:hover {
+            color: #e12222;
+        }
+        &:nth-child(6) {
+            margin: 16px 0 0 0;
+        }
+    }
+}
