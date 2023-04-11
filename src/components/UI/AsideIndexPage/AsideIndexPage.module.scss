@@ -22,6 +22,7 @@
 }
 .aside-index-page {
     margin: 136px 0 0 0;
+    padding: 0 64px;
     &__title {
         @include header__title;
         margin: 0;

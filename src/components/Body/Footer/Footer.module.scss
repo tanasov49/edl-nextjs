@@ -1,0 +1,47 @@
+.footer {
+   margin: 112px 0 0 0;
+}
+.address {
+    color: #000000;
+    display: flex;
+    gap: 295px; 
+    &__city {
+     font-weight: 400;
+     font-size: 30px;
+     line-height: 38px;
+     margin: 0 0 15px 0;
+    }
+    &__street {
+     font-weight: 400;
+     font-size: 23px;
+     line-height: 36px;
+     margin: 0;
+    }
+    &__subtitle {
+     font-weight: 400;
+     font-size: 19px;
+     line-height: 28px;
+     margin: 16px 0 0 0;
+    }
+}
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 112px 0 0 0;
+    &__link {
+        text-decoration: none;
+        transition: ease 0.7s;
+        color: #000000;
+        &:hover {
+            color: #49f951;
+        }
+    }
+    &__text {
+        margin: 0;
+        color: #000000;
+    }
+}
