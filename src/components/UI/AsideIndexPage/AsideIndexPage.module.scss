@@ -1,38 +1,16 @@
-@mixin header__title {
-    font-weight: 400;
-    font-size: 84px;
-    line-height: 101px;
-    color: #000000;
-}
-@mixin header__subtitle {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 41px;
-    color: #000000;
-}
-@mixin header__link {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    color: #000000b3;
-    transition: color 0.7s;
-    &:hover {
-        color: rgb(36, 172, 74);
-    }
-}
 .aside-index-page {
     margin: 136px 0 0 0;
     padding: 0 64px;
     &__title {
-        @include header__title;
+        @include titleAside;
         margin: 0;
     }
     &__subtitle {
-        @include header__subtitle;
+        @include subtitleAside;
         margin: 66px 0 0 0;
     }
     &__link {
-        @include header__link;
+        @include asideLink;
         text-decoration: none;
         margin: 7px 0 0 0;
     }

@@ -1,0 +1,163 @@
+@mixin linkItem {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $colorTextBlack;
+    transition: color 0.5s;
+    &:hover {
+        color: $colorTextLinkHover;
+    }
+}
+@mixin titleAside {
+    font-weight: 400;
+    font-size: 84px;
+    line-height: 101px;
+    color: $colorTextBlack;
+}
+@mixin subtitleAside {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: $colorTextBlack;
+}
+@mixin asideLink {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: $colorTextBlack;
+    
+    transition: color 0.7s;
+    &:hover {
+        color: $colorTextLinkHover;
+    }
+}
+@mixin linkProduct {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    color: $colorTextBlack;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    background: $colorWhite;
+    transition: color 0.7s, background 0.7s;
+    &:hover {
+        color: $colorTextLinkHover;
+        background: $colorWhiteHover;
+    }
+}
+@mixin titleProduct {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: $colorTextBlack;
+}
+@mixin slillText {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $colorTextBlackLight;
+}
+@mixin sectionAboutTitle {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 90px;
+    color: $colorTextWhite;
+}
+
+@mixin textAboutP {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    color: $colorTextWhiteDark;
+}
+@mixin textAboutH4 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    color: $colorTextWhite;
+}
+@mixin textAboutH3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: $colorTextWhite;
+}
+@mixin textAuthor {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+@mixin titleLearn {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: $colorTextWhite;
+}
+@mixin subtitleLearn {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $colorTextWhite;
+}
+@mixin linkLearn {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: $colorTextWhite;
+    transition: color 0.7s;
+    &:hover {
+        color: $colorTextLinkHover;
+    }
+    &:nth-child(6) {
+        margin: 16px 0 0 0;
+    }
+}
+@mixin asideContactsTitle {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 75px;
+    color: $colorTextBlack;
+}
+@mixin asideContactsSubtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 49px;
+    color: $colorTextBlack;
+}
+@mixin asideContactsButton {
+    padding: 16px 28px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: $colorTextWhite;
+    background: $colorBlack;
+    border-radius: 50px;
+    transition: background 0.7s, color 0.7s;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background: $colorWhiteHover;
+        color: $colorTextLinkHover;
+    }
+}
+@mixin addressCity {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    color: $colorTextBlack;
+}
+@mixin addressStreet {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 36px;
+    color: $colorTextBlack;
+}
+@mixin addressSubtitle {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    color: $colorTextBlack;
+}

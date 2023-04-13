@@ -1,5 +1,11 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-  openAnalyzer: false,
-})
-module.exports = withBundleAnalyzer({})
+/** @type {import('next').NextConfig} */
+const path = require('path');
+const nextConfig = {
+  reactStrictMode: true,
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+    additionalData: `@import "src/styles/variables.scss"; @import "src/styles/mixins.scss";`
+  },
+}
+
+module.exports = nextConfig

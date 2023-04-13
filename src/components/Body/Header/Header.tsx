@@ -5,7 +5,6 @@ function Header() {
     return (
         <header className={styles.header}>
            <Nav />
-
         </header>
     );
 }
