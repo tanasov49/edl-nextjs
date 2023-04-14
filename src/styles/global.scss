@@ -11,7 +11,7 @@ body {
 }
 
 .not-found {
-    margin: 40px 0 0 0;
+    margin: 100px 0;
     padding: 0 72px;
     &__title {
         font-weight: 400;
@@ -19,6 +19,7 @@ body {
         line-height: 101px;
         color: $colorTextBlack;
         margin: 0;
+        text-align: center;
         @media screen and (max-width: 768px) {
             font-size: 42px;
             line-height: 46px;
