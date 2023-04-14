@@ -6,13 +6,27 @@
     padding: 48px;
     margin: 128px 0 0 0;
     border-radius: 8px;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
     grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
     gap: 0 64px;
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 800px;
+
+    }
     img {
         grid-column: 1;
         grid-row: 1 / 8;
+        width: 100%;
+        height: auto;
+        @media screen and (max-width: 1024px) {
+            margin: 0 0 20px 0;
+        }
     }
     &__title {
         @include titleLearn;
@@ -21,10 +35,7 @@
 
     }
     &__subtitle {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 39px;
-        color: #FFFFFF;
+        @include subtitleLearn;
         grid-column: 2;
         margin: 0 0 67px 0;
     }

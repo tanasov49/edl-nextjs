@@ -2,4 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 0;
+        transition: height 3s;
+        &_active {
+            position: fixed;
+            height: 100vh;
+            background: $colorActiveMenu;
+        }
+    }
 }

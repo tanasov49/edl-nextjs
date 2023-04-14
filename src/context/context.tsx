@@ -9,6 +9,8 @@ interface IModalContext {
     isOpenPopup: boolean,
     rootRef: any,
     closePopup: () => void,
+    isOpenMenu: boolean,
+    hadnleOpenMenu: () => void
 }
 interface IValues {
     name: string,
@@ -30,7 +32,8 @@ export const ModalContext = createContext<IModalContext>({
     closePopup: () => {},
     isOpenPopup: false,
     rootRef: null,
-
+    isOpenMenu: false,
+    hadnleOpenMenu: () => {}
 })
 export const ModalSate = ({children}: {children: React.ReactNode}) => {
     const defaulValues:IValues = {
@@ -48,6 +51,7 @@ export const ModalSate = ({children}: {children: React.ReactNode}) => {
     const [valid, setValid] = useState(defaultValid);
     const [canSubmit, setCanSubmit] = useState(false);
     const [isOpenPopup, seIsOpenPopup] = useState(false);
+
     const openPopup = () => {
         seIsOpenPopup(true)
     }
@@ -55,7 +59,11 @@ export const ModalSate = ({children}: {children: React.ReactNode}) => {
         seIsOpenPopup(false);
         setValues(defaulValues);
     }
-
+    // Open menu NAv
+    const [isOpenMenu, setIsOpenMenu] = useState(Boolean);
+    const hadnleOpenMenu = () => {
+        setIsOpenMenu(!isOpenMenu)
+    }
 useEffect(() => {
     const handleClickOutSide = (e: any) => {
         if (rootRef.current && !rootRef.current.contains(e.target)) {
@@ -140,7 +148,7 @@ useEffect(() => {
         console.log(values);
     }
     return (
-        <ModalContext.Provider value={{values, errors, handleChange, canSubmit, hanldeSubmitForm, openPopup, isOpenPopup, rootRef, closePopup}}>
+        <ModalContext.Provider value={{values, errors, handleChange, canSubmit, hanldeSubmitForm, openPopup, isOpenPopup, rootRef, closePopup, isOpenMenu, hadnleOpenMenu}}>
             {children}
         </ModalContext.Provider>
     )

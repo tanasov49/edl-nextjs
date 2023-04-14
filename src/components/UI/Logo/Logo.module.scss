@@ -1,4 +1,25 @@
 .logo {
     width: 103px;
     height: 48px;
+    
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        &_active {
+            left: 50%;
+            transform: translateX(-50%);
+            animation: transformLogo 4s;
+        }
+    }
+}
+@keyframes transformLogo {
+    from {
+        left: 30px;
+        transform: translateX(0);
+    }
+    to {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

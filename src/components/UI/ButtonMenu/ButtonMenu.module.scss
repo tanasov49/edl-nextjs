@@ -1,0 +1,55 @@
+.button-menu {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    @media screen and (max-width: 768px) {
+        display: block;
+        right: 30px;
+        top: 0;
+    }
+    svg {
+        transition: transform 400ms;
+        user-select: none;
+        path {
+            fill:none;
+            transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+            stroke: $colorTextBlack;
+            stroke-width:7;
+            stroke-linecap:round;
+            &:nth-child(1) {
+                stroke-dasharray: 40 160;
+            }
+            &:nth-child(2) {
+                stroke-dasharray: 40 142;
+                transform-origin: 50%;
+                transition: transform 400ms;
+            }
+            &:nth-child(3) {
+                stroke-dasharray: 40 85;
+                transform-origin: 50%;
+                transition: transform 400ms, stroke-dashoffset 400ms;
+            }
+        }
+    }
+    &_active {
+        svg {
+            transform: rotate(45deg);
+            path {
+                &:nth-child(1) {
+                    stroke-dashoffset: -64px;
+                }
+                &:nth-child(2) {
+                    transform: rotate(90deg);
+                }
+                &:nth-child(3) {
+                    stroke-dashoffset: -64px;
+                }
+            }
+        }
+    }
+}

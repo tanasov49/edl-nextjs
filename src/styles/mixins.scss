@@ -5,6 +5,9 @@
     line-height: 28px;
     color: $colorTextBlack;
     transition: color 0.5s;
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
     &:hover {
         color: $colorTextLinkHover;
     }
@@ -14,22 +17,32 @@
     font-size: 84px;
     line-height: 101px;
     color: $colorTextBlack;
+    @media screen and (max-width: 600px) {
+        font-size: 50px;
+        line-height: 60px;
+    }
 }
 @mixin subtitleAside {
     font-weight: 400;
     font-size: 30px;
     line-height: 41px;
     color: $colorTextBlack;
+    @media screen and (max-width: 600px) {
+        font-size: 26px;
+        line-height: 28px;
+    }
 }
 @mixin asideLink {
     font-weight: 400;
     font-size: 24px;
-    line-height: 33px;
+    line-height: 40px;
     color: $colorTextBlack;
-    
     transition: color 0.7s;
     &:hover {
         color: $colorTextLinkHover;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 22px;
     }
 }
 @mixin linkProduct {
@@ -52,6 +65,11 @@
     font-size: 48px;
     line-height: 60px;
     color: $colorTextBlack;
+    @media screen and (max-width: 600px) {
+        font-size: 30px;
+        line-height: 32px;
+        text-align: center;
+    }
 }
 @mixin slillText {
     font-weight: 400;
@@ -64,6 +82,11 @@
     font-size: 72px;
     line-height: 90px;
     color: $colorTextWhite;
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+    }
 }
 
 @mixin textAboutP {
@@ -71,35 +94,60 @@
     font-size: 21px;
     line-height: 32px;
     color: $colorTextWhiteDark;
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 18px;
+    }
 }
 @mixin textAboutH4 {
     font-weight: 400;
     font-size: 30px;
     line-height: 38px;
     color: $colorTextWhite;
+    @media screen and (max-width: 768px) {
+        font-size: 26px;
+        line-height: 28px;
+    }
 }
 @mixin textAboutH3 {
     font-weight: 400;
     font-size: 36px;
     line-height: 54px;
     color: $colorTextWhite;
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+    }
 }
 @mixin textAuthor {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 @mixin titleLearn {
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
     color: $colorTextWhite;
+    @media screen and (max-width: 768px) {
+        font-size: 28px;
+        line-height: 30px;
+    }
 }
 @mixin subtitleLearn {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: $colorTextWhite;
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 @mixin linkLearn {
     text-decoration: none;
@@ -120,12 +168,22 @@
     font-size: 60px;
     line-height: 75px;
     color: $colorTextBlack;
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+    }
 }
 @mixin asideContactsSubtitle {
     font-weight: 400;
     font-size: 30px;
     line-height: 49px;
     color: $colorTextBlack;
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
 }
 @mixin asideContactsButton {
     padding: 16px 28px;

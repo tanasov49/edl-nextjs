@@ -15,6 +15,11 @@
     flex-direction: column;
     align-self: flex-end;
     margin: 94px 77px 128px 0;
+    @media screen and (max-width: 600px) {
+        max-width: 100%;
+        text-align: center;
+        margin: 94px auto 40px;
+    }
     p {
         @include textAboutP;
         margin: 0;
@@ -36,6 +41,9 @@
     gap: 0 24px;
     align-items: center;
     margin: 27px 0 0 0;
+    @media screen and (max-width: 600px) {
+        margin: 40px 0 0 0;
+    }
     &__image {
         grid-row: 1 / 3;
     }

@@ -4,9 +4,30 @@
     list-style-type: none;
     display: flex;
     gap: 64px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        gap: 50px;
+        &_active {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(50%);
+            animation: animateMenu 3s;
+        }
+    }
 }
 .menu-item {
     &__link {
         @include linkItem;
+    }
+}
+@keyframes animateMenu {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(50%);
     }
 }
